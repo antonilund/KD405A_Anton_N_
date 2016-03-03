@@ -40,3 +40,4 @@ local.properties
 # STS (Spring Tool Suite)
 .springBeans
 src/Thumbs.db
+*.db
