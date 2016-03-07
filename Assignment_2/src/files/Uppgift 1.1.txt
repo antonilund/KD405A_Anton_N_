@@ -1,0 +1,27 @@
+﻿Uppgift 2.1.1
+a) House(int yearBuilt, int size);{} är konstruktor
+
+b) yearBuilt och size är instansvariabler
+
+c) getYearBuilt() och getSize() är instansmetoder.
+
+d) "final" betyder att den inte kan ändras i (av) instanserna.
+
+e) private innebär att variablerna bara är åtkomliga inuti klassen. 
+public betyder att de kan anropas från var som helst i programmet(eller utifrån). 
+
+f) UML Diagram:
+------------------------------------------------
+|						|
+|House						|
+|_______________________________________________|
+|-yearBuilt: int				|
+|-size: int					|
+|-minSize: int					|
+|_______________________________________________|
+|						|
+|+getYearBuilt():int				|
+|+getSize():int					|
+|						|
+|						|
+|_______________________________________________|
