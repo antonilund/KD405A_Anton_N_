@@ -1,0 +1,28 @@
+Uppgift 6.2.1
+Sökningen går mellan Malmö och Lund
+
+6.2.2
+Nu ger denna sökningen 5 resultat som default, men om man vill specificera det så skriver man:
+http://www.labs.skanetrafiken.se/v2.2/resultspage.asp?cmdaction=next&selPointFr=0|80000|0&selPointTo=0|81216|0&NoOf=5
+där det valfria tillägget &NoOf=5 anger hur många resultat man vill hämta-
+
+6.2.3
+<Journeys> 
+	//Här listas de resealterntiv  (<Journey>)  som finns
+	<Journey>
+		//Varje individuell resa enligt din Query
+			<Route-Links>
+				//Här listas de olika resorna/rutterna med en unik kod, så att den interna sökmotorn kan hitta dem enkelt i andra sammanhang, tex för att visa på en karta.
+					<RouteLink>
+						//Här är varje individuell länk till rutterna. Deras egen förklaring är dock något svårtydd;
+						//Used by the Elmer seach engine to identify an object uniquely in the scope of a traffic data.
+					</RouteLink>
+			</RouteLinks>
+	</Jouney>
+</Journeys>
+
+6.2.4
+<NoOfChanges> anger hur många byten man har
+
+6.2.5
+Ett exempel på en tag som inte implementeras är <CO2>
